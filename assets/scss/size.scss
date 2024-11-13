@@ -1,0 +1,114 @@
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 40px;
+
+        span {
+            font-size: 30px;
+            position: relative;
+            top: -10px;
+        }
+    }
+
+    .container-card {
+        flex-direction: column;
+        height: 60%;
+        left: 0;
+        width: 100%;
+    }
+
+    .card {
+        border-radius: 0 !important;
+    }
+
+    h4 {
+        position: relative;
+        top: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    h2 {
+        font-size: 70px;
+
+        span {
+            font-size: 40px;
+        }
+    }
+
+    .container-card {
+        height: 35%;
+        left: 0;
+        width: 100%;
+    }
+
+    h4 {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    h5 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    h2 {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h2 {
+        font-size: 80px;
+    }
+
+    .container-card {
+        width: 80%;
+        margin: auto;
+        gap: 10px;
+        left: 10%;
+    }
+
+    .card {
+        border: 20px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    h2 {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    h2 {
+        font-size: 150px;
+
+        span {
+            font-size: 85px;
+            position: relative;
+            bottom: 30px;
+        }
+    }
+
+    h4 {
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    h5 {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+    }
+}

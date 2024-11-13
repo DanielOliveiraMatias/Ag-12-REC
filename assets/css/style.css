@@ -1,0 +1,353 @@
+@font-face {
+  font-family: Fjalla;
+  src: local(Fjalla), url(../font/Fjalla/Fjalla\ One-Regular.ttf);
+}
+@font-face {
+  font-family: Be Vietnam Pro;
+  src: local(Be Vietnam Pro), url(../font/BeVietnamPro/Be\ Vietnam\ Pro-Regular.ttf);
+}
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 40px;
+  }
+  h2 span {
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+  }
+  .container-card {
+    flex-direction: column;
+    height: 60%;
+    left: 0;
+    width: 100%;
+  }
+  .card {
+    border-radius: 0 !important;
+  }
+  h4 {
+    position: relative;
+    top: 15px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 70px;
+  }
+  h2 span {
+    font-size: 40px;
+  }
+  .container-card {
+    height: 35%;
+    left: 0;
+    width: 100%;
+  }
+  h4 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  h2 {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 80px;
+  }
+  .container-card {
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+    left: 10%;
+  }
+  .card {
+    border: 20px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  h2 {
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  h2 {
+    font-size: 150px;
+  }
+  h2 span {
+    font-size: 85px;
+    position: relative;
+    bottom: 30px;
+  }
+  h4 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  h5 {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+}
+* {
+  cursor: default;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #0c0c0c;
+}
+
+main {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Be Vietnam Pro;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+}
+
+.card {
+  position: relative;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  z-index: 1;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0c0c;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  z-index: 2;
+  opacity: 1;
+}
+
+#c1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#c1 .banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 45%;
+  background-image: url(https://images.alphacoders.com/129/thumb-1920-1293233.jpg);
+}
+#c1 .logo {
+  filter: invert(100%);
+}
+
+#c2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#c2 .banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 50%;
+  background-image: url(https://images5.alphacoders.com/134/thumb-1920-1341511.png);
+}
+#c2 .logo {
+  filter: invert(100%);
+}
+
+#c3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#c3 .banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 60%;
+  background-image: url(https://images8.alphacoders.com/133/thumb-1920-1339526.png);
+}
+
+#f1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#f1 .banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 30%;
+  background-image: url(https://images4.alphacoders.com/632/thumb-1920-632889.jpg);
+}
+#f1 .logo {
+  filter: invert(100%);
+}
+
+#f2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#f2 .banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 25%;
+  background-image: url(https://images7.alphacoders.com/346/thumb-1920-346059.jpg);
+}
+#f2 .logo {
+  filter: invert(100%);
+  top: -10px;
+  right: 15px;
+}
+
+#f3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#f3 .banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 60%;
+  background-image: url(https://images6.alphacoders.com/412/thumb-1920-412305.jpg);
+}
+#f3 .logo {
+  width: 20%;
+  border-radius: 20px;
+  filter: grayscale(100%);
+}
+
+a {
+  position: absolute;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+.cont {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  height: auto;
+  background-image: none !important;
+}
+.cont h4 {
+  position: relative;
+}
+.cont h5 {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.logo {
+  position: absolute;
+  width: 30%;
+  top: 5px;
+  right: 5px;
+  opacity: 0.85;
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Fjalla;
+  font-weight: normal;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+h2 span {
+  position: relative;
+  bottom: 45px;
+  font-style: italic;
+}
+
+.template {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100dvh;
+  background-color: #0c0c0c;
+}
+
+#cachorro {
+  background-image: url(https://images4.alphacoders.com/133/thumb-1920-1339527.png);
+}
+
+#fotografia {
+  background-image: url(https://images.pexels.com/photos/2831716/pexels-photo-2831716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+#culinaria {
+  background-image: url(../img/culinaria.jpeg);
+}
+
+.gradient {
+  background-image: linear-gradient(to top, black, transparent);
+  width: 100%;
+  height: 100dvh;
+}
+
+.gradientCard {
+  background-image: linear-gradient(to top, black 60%, transparent 105%);
+  width: 100%;
+  height: 100dvh;
+}
+
+/*# sourceMappingURL=style.css.map */
